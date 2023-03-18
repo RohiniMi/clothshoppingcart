@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/shoppingApp.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./main.js" async></script>
+<script defer src="public/main.js"></script></head>
+
+<body class="shoppingApp">
+    <header>
+        <a href="./shoppingApp.html?filter=home" class="menu_icon">
+            <div class="home" id="home"><strong>Home</strong></div>
+        </a>
+        <a href="./shoppingApp.html?filter=mens" class="menu_icon">
+            <div class="mens" id="mens"><strong>Mens</strong></div>
+        </a>
+        <a href="./shoppingApp.html?filter=womens" class="menu_icon">
+            <div class="womens" id="womens"><strong>Womens</strong></div>
+        </a>
+        <a href="./shoppingApp.html?filter=kids" class="menu_icon">
+            <div class="kids" id="kids"><strong>Kids</strong></div>
+        </a>
+        <h1><strong>Shopping Cart</strong></h1>
+        <a href="./placedOrders.html">
+            <i class="placed_orders"><strong>Placed Orders</strong></i>
+        </a>
+        <i class="material-icons">fa</i>
+        <a href="./cart.html">
+            <i class="fa fa-shopping-cart fa_custom fa-3x"></i>
+        </a>
+        <i class="material-icons">fa</i>
+        <a id='login' href="./login.html">
+            <i color="back">Login</i>
+        </a>
+        <i class="material-icons">fa</i>
+        <a id='user' href="./userDetails.html">
+            <i class="fa fa-user fa_custom fa-2x" color="back"></i>
+        </a>
+        <i class="material-icons">fa</i>
+        <button id='logout' style="background-color:palevioletred">
+            <i color="back">Logout</i>
+        </button>
+
+    </header>
+    <br>
+    <main id="product_main">
+        <div>
+            <input type="text" style=" padding:15px;text-align:'center'" class="search_bar"
+                placeholder="Enter items to be searched">
+            <button style="background-color:palevioletred;padding:15px" id="search">search</button>
+            <div id="product_filter">Filters
+                <div id="show_product_filter" style="display:block;">
+                    <div>Color<br>
+                       <label> Red:<input type="checkbox" name="filter" value="red" id="1" ></label>
+                       <label> Black:<input type="checkbox" name="filter" value="black" id="2" ></label>
+                       <label>Blue:<input type="checkbox" name="filter" value="blue" id="3"></label>
+                       <label>White:<input type="checkbox" name="filter" value="white" id="4"></label>
+                       <label>Pink:<input type="checkbox" name="filter" value="pink"  id="5"></label>
+                    </div>
+                    <div>Size <br>
+                        <label>Small:</label><input type="checkbox" name="size_filter" id="6" value="S"  >
+                        <label>Medium:</label><input type="checkbox" name="size_filter" id="7" value="M" >
+                        <label>Large:</label><input type="checkbox" name="size_filter" id="8" value="L" >
+                        <label>XL:</label><input type="checkbox" name="size_filter" id="9" value="XL" >
+                        <label>XXL:</label><input type="checkbox" name="size_filter" id="10" value="XXL" >
+                    </div>
+                    <div id="clear-filter">Clear Filter</div>
+                    <div id="filter_btn">search</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="products"></div>
+    </main>
+    <footer>
+        <a href="contact.html"><strong>Contact Us</strong></a>
+    </footer>
+
+</body>
+
+</html>

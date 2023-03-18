@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Signup</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div class="main">
+        <h1>SIGN UP</h1>
+        <form class="signupForm" name="myForm" > 
+              <span class="successfull-signup"></span>  
+            <input type="text"
+                   name="name"
+                   id="signup-name"
+                   placeholder="user name"
+            />
+
+            <input type="email"
+                   name="email" 
+                   id="signup-email" 
+                   placeholder="Email"
+            />
+            <input type="text"
+                   name="address"
+                   id="signup-address"
+                   placeholder="Please enter your address here"
+            />
+            <input type="password" 
+                   name="password"
+                   id="signup-password" 
+                   placeholder="Password" 
+              />
+            <input type="password" 
+                   name="confirm_password"
+                   id="signup-confirm_password"
+                   placeholder="Confirm Password"
+            />
+            <div class="redirect_login">Already have an account?</div>
+            <button id="signupSubmit"  > sign up </button>
+            <br>
+            <br>
+            <span class="signup-error"></span>          
+        </form>      
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
